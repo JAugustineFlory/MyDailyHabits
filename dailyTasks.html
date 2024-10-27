@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augustine's Daily Habits</title>
 </head>
+<h1>Augustine's Daily Log</h1>
 <main>
     <!--Reading-------------------->
     <article class="reading">
+        <h2>Reading</h2>
         <label class="inline-block"><label for="bookTitle"><h3>Book Title:</h3></label>
         <input type="text" name="bookTitle" id="bookTitle" placeholder="Book I'm reading"></label>
         <br>
@@ -148,15 +150,18 @@
     </article>
      <!--Language-------------------->
     <article class="language">
-        <label class="inline-block"><label for="bookTitle"><h3>Book Title:</h3></label>
-        <input type="text" name="bookTitle" id="bookTitle" placeholder="Book I'm reading"></label>
+        <h2>Language</h2>
+        <h3>Method(s)</h3>
+        <input type="checkbox" name="duolingo" id="duolingo">
+        <label for="duolingo">Duolingo</label>
+        <br>
+        <input type="checkbox" name="langOther" id="langOther">
+        <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
         <br>
 
-        <input type="range" name="timeRead" id="timeRead" max="100+" value="0" step="5" oninput="this.nextElementSibling.value = this.value"><output></output>
-        <label for="timeRead">Minutes Read</label>
+        <input type="range" name="timeRead" id="timeRead" max="100" value="0" step="5" oninput="this.nextElementSibling.value = this.value"><output></output>
+        <label for="timeRead">Minutes Studied</label>
         <br>
-        <input type="range" name="pagesRead" id="pagesRead" max="100+" value="0" step="5">
-        <label for="pagesRead">Pages Read</label>
         <table>
             <tr>
                 <th>S</th>
