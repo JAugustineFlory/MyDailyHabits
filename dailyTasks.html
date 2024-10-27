@@ -293,18 +293,62 @@
     </article>
      <!--Core-Curriculum-------------------->
     <article class="coreCurriculum">
-        <label class="inline-block"><label for="bookTitle"><h3>Book Title:</h3></label>
-        <input type="text" name="bookTitle" id="bookTitle" placeholder="Book I'm reading"></label>
-        <br>
-
-        <input type="range" name="timeRead" id="timeRead" max="100+" value="0" step="5" oninput="this.nextElementSibling.value = this.value"><output></output>
-        <label for="timeRead">Minutes Read</label>
-        <br>
-        <input type="range" name="pagesRead" id="pagesRead" max="100+" value="0" step="5">
-        <label for="pagesRead">Pages Read</label>
+        <h2>Core Curriculum</h2>
         <table>
             <tr>
-                <th>S</th>
+                <td class="math">
+                    <h3>Math</h3>
+                    <input type="checkbox" name="khanMath" id="khanMath">
+                    <label for="khanMath">Khan Academy</label>
+                    <br>
+                    <input type="checkbox" name="langOther" id="langOther">
+                    <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
+                    <br>
+                </td>
+                <td class="history">
+                    <h3>History</h3>
+                    <input type="checkbox" name="khanHistory" id="khanHistory">
+                    <label for="khanHistory">Khan Academy</label>
+                    <br>
+                    <input type="checkbox" name="langOther" id="langOther">
+                    <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
+                    <br>
+                </td>
+                
+                <td class="science">
+                    <h3>Science</h3>
+                    <input type="checkbox" name="khanScience" id="khanScience">
+                    <label for="khanScience">Khan Academy</label>
+                    <br>
+                    <input type="checkbox" name="langOther" id="langOther">
+                    <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td class="writing">
+                    <h3>Writing</h3>
+                    <input type="checkbox" name="journaling" id="journaling">
+                    <label for="journaling">Journaling</label>
+                    <br>
+                    <input type="checkbox" name="langOther" id="langOther">
+                    <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
+                    <br>
+                </td>
+                <td class="finance">
+                    <h3>Finance</h3>
+                    <input type="checkbox" name="khanFinance" id="khanFinance">
+                    <label for="khanFinance">Khan Academy</label>
+                    <br>
+                    <input type="checkbox" name="langOther" id="langOther">
+                    <label for="langOther"><input type="text" name="langOther" id="langOther" placeholder="other"></label>
+                    <br>
+                </td>
+            </tr>
+        </table>
+            <table>
+                <tr>
+                    <th>S</th>
                 <th>M</th>
                 <th>T</th>
                 <th>W</th>
